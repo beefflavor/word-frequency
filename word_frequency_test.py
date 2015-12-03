@@ -33,11 +33,11 @@ class TestWordFrequency(unittest.TestCase):
                               "buffalo buffalo")
         self.assertEqual(freq["buffalo"], 7)
 
-    # def test_complex_text(self):
-    #     freq = word_frequency(gettysburg)
-    #     self.assertEqual(freq["dedicated"], 4)
-    #     self.assertEqual(freq["great"], 3)
-    #     self.assertEqual(freq["devotion"], 2)
+    def test_complex_text(self):
+        freq = word_frequency(gettysburg)
+        self.assertEqual(freq["dedicated"], 4)
+        self.assertEqual(freq["great"], 3)
+        self.assertEqual(freq["devotion"], 2)
 
 if __name__ == '__main__':
     unittest.main()
